@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Proof</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="proof.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Eureka Sportive</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="https://vmonreve.github.io/HomeAfterLogin/">Home</a></li>
+          <li><a href="https://vmonreve.github.io/AboutUs/" id="about-us">About Us</a></li>
+          <li><a href="https://vmonreve.github.io/KategoriOlahraga/">Article</a></li>
+          <li><a href="index.html">Chat With Trainer</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <main>
+      <h1 class="judul">Konfirmasi Pembayaran</h1>
+    </main>
+
+    <!-- Content Bukti Pembayaran -->
+    <section class="container-content">
+      <form action="/submit-payment-proof" method="post">
+        <h2>Kirim bukti pembayaran anda disini</h2>
+        <label for="account-name" class="title">Nama Rekening:</label>
+        <input type="text" id="account-name" name="account-name" />
+        <label for="bank" class="title">Bank:</label>
+        <input type="text" id="bank" name="bank" />
+        <label for="pay-amount" class="title">Jumlah Pembayaran</label>
+        <input type="text" id="pay-amount" name="pay-amount" />
+        <label for="payment-proof" class="title">Tanda Bukti Pembayaran:</label>
+        <input type="file" id="payment-proof" name="payment-proof" class="pilih-file" onchange="changeText()" />
+        <p class="p-bukti">Foto Bukti Max 50MB</p>
+      </form>
+      <div class="button-kirim">
+        <button class="button" onclick="send()">Kirim</button>
+      </div>
+    </section>
+    <!-- End Content Bukti Pembayaran -->
+
+    <!-- JavaScript -->
+    <script>
+      function send() {
+        window.location.href = "status.html";
+      }
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
+
+    <script>
+      feather.replace({ class: "foo bar", "stroke-width": 2 });
+    </script>
+    <!-- End JavaScript -->
+  </body>
+</html>

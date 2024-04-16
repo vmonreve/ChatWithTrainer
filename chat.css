@@ -1,0 +1,94 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #d9d9d9;
+  height: 100vh;
+}
+
+/* Style Navbar */
+.navbar {
+  background-color: #2e0c0a;
+}
+
+.nav-back {
+  color: #fff;
+  cursor: pointer;
+}
+
+.flex-none {
+  margin-left: 10px;
+}
+
+.p-nav {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 25px;
+}
+/* End Style Navbar */
+
+/* Style Isi Chat */
+.chat-bubble {
+  background-color: #fff;
+  color: #000;
+}
+
+.chat-header {
+  color: #000;
+}
+
+.chat-trainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background: #2e0c0a;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.teks {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #fff;
+  width: 90%;
+  padding: 5px 30px;
+  border: none;
+  color: #000000;
+}
+/* End Style Isi Chat */
+
+/* Style Typing */
+.camera {
+  background-color: #fff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 34px;
+  width: 40px;
+  padding-right: 20px;
+  color: #2e0c0a;
+  cursor: pointer;
+}
+
+.kirim {
+  text-align: center;
+  background-color: #fff;
+  color: #2e0c0a;
+  margin-left: 10px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* End Style Typing */

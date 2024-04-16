@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Trainer</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="">
+          <i data-feather="chevron-left" class="nav-back" onclick="back()"></i>
+        </div>
+
+        <div class="flex-none">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+            <div class="w-12 rounded-full">
+              <img alt="Tailwind CSS Navbar component" src="img/justincoach.jpg" class="img-nav" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="p-nav">Justin</p>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Section isi Chat -->
+    <section class="mt-8 me-3 ms-3">
+      <div class="chat chat-start">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS chat bubble component" src="img/justincoach.jpg" />
+          </div>
+        </div>
+        <div class="chat-header">Justin</div>
+        <div class="chat-bubble">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </div>
+      </div>
+      <div class="chat chat-end">
+        <div class="chat-image avatar">
+          <div class="w-10 rounded-full">
+            <img alt="Tailwind CSS chat bubble component" src="img/kevin.jpg" />
+          </div>
+        </div>
+        <div class="chat-header">Kevin</div>
+        <div class="chat-bubble">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+      </div>
+    </section>
+    <!-- End Section isi Chat -->
+
+    <!-- Section Typing -->
+    <section class="chat-trainer">
+      <input type="text" placeholder="Type Here..." class="teks" /> <i data-feather="camera" class="camera"></i>
+      <div>
+        <i data-feather="send" class="kirim"></i>
+      </div>
+    </section>
+    <!-- End Section Typing -->
+
+    <!-- JavaScript -->
+    <script>
+      function back() {
+        window.location.href = "status.html";
+      }
+
+      feather.replace({ class: "foo bar", "stroke-width": 2 });
+    </script>
+    <!-- End JavaScript -->
+  </body>
+</html>

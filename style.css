@@ -44,6 +44,9 @@ nav li {
   padding: 10px;
   font-size: small;
 }
+nav ul :hover {
+  color: #ff3d00;
+}
 
 a {
   color: #fff;
@@ -285,12 +288,13 @@ article {
 
 .rp-button {
   display: flex;
-  gap: 66px;
+  gap: 63px;
   margin-top: 20px;
 }
 
 .color-button {
   color: #000090;
+  cursor: pointer;
 }
 /* End Style Bagian Content Ketiga */
 

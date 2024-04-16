@@ -1,0 +1,448 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #e0e0e0;
+  height: 140vh;
+}
+
+/* Style Header */
+header {
+  background-color: #2c0b09;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 16px;
+  box-shadow: 0px -4px 2px 0px rgba(0, 0, 0, 0.05) inset, 0px 4px 2px 0px rgba(255, 255, 255, 0.25) inset, 4px 4px 26px 0px rgba(255, 255, 255, 0.25) inset, 0px 40px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  font-size: small;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  padding: 2px;
+}
+
+nav li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: small;
+}
+nav ul :hover {
+  color: #ff3d00;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#chat {
+  text-decoration: underline;
+}
+
+.dropbtn {
+  margin-right: 20px;
+  border: none;
+  font-size: 20px;
+  padding: 0px 5px;
+  width: 100px;
+  background-color: #fff;
+  font-size: small;
+  font-weight: 600;
+  cursor: pointer;
+  color: #2c0b09;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 7px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+  background: #942720;
+  border-radius: 5px;
+}
+
+.show {
+  display: block;
+}
+/* End Style Header */
+
+/* Style Isi Content */
+article {
+  display: flex;
+  margin-top: 120px;
+}
+
+.section-coach {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  margin: 0px 100px 0px 100px;
+  gap: 5px;
+  border-radius: 11px;
+  background: #2e0c0a;
+  padding-bottom: 30px;
+}
+
+.title {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.job {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.price {
+  color: #2e0c0a;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  padding: 5px 25px;
+  border-radius: 11px;
+  background: #d9d9d9;
+  margin-top: 15px;
+}
+
+.btn-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: #2e0c0a;
+  margin-top: 10px;
+}
+
+.btn {
+  color: #2e0c0a;
+  font-family: Rubik;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 11px;
+  background: #d9d9d9;
+  border: none;
+  padding: 2px 30px;
+}
+
+.btn1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding-right: 40px;
+  padding-left: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #2e0c0a;
+  border-radius: 11px;
+  background: #d9d9d9;
+  border: none;
+}
+
+.p-coach {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.img-justin {
+  width: 170px;
+  height: 200px;
+}
+
+.section-payment {
+  flex: 1;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 100px 0px 100px;
+  padding-top: 30px;
+  gap: 5px;
+}
+
+.biaya {
+  display: flex;
+  gap: 50px;
+  padding: 0px 40px;
+  padding-left: 20px;
+  color: #000;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.pembayaran {
+  display: flex;
+  color: #000;
+  font-family: Rubik;
+  padding: 0px 40px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  /* background-color: black;  */
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+h3 {
+  color: #000;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 0px 40px;
+  padding-left: 20px;
+}
+
+.metode-pembayaran {
+  display: flex;
+  padding-left: 20px;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.debit {
+  color: #000;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 50px;
+  border: 1px solid #999;
+  background: #fff;
+  border: none;
+  padding: 8px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.e-wallet {
+  color: #000;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 50px;
+  border: 1px solid #999;
+  background: #fff;
+  border: none;
+  padding: 8px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bank-account {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.btn-bank {
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 15px;
+  border: 1px solid #999;
+  background: #fff;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 120%;
+  transition: background-color 0.3s ease;
+}
+
+.debit:hover,
+.e-wallet:hover,
+.btn-bank:hover {
+  background: #2e0c0a;
+  color: #fff;
+}
+
+.total-pembayaran {
+  display: flex;
+  padding-left: 20px;
+  gap: 80px;
+  margin-top: 10px;
+}
+
+.total {
+  color: #000;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.harga {
+  color: #000;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bayar-btn {
+  color: #fff;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 15px;
+  background: #000090;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+
+.ganti {
+  padding-left: 35%;
+  margin-top: 20px;
+}
+
+.trainer {
+  color: #000;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    border-radius: 0px;
+  }
+  .logo {
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+  }
+  .dropbtn {
+    margin-bottom: 15px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .biaya {
+    font-size: 15px;
+  }
+  .pembayaran {
+    font-size: 15px;
+  }
+  .section-coach {
+    margin: 0px 0px 40px 0px;
+  }
+  .section-payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+
+  }
+  .trainer {
+    display: none;
+  }
+  .btn-bank {
+    width: 100%;
+  }
+  .total-pembayaran {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Eureka Sportive</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="https://vmonreve.github.io/HomeAfterLogin/">Home</a></li>
+          <li><a href="https://vmonreve.github.io/AboutUs/">About Us</a></li>
+          <li><a href="https://vmonreve.github.io/KategoriOlahraga/">Article</a></li>
+          <li><a href="index.html" id="Chat">Chat With Trainer</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Isi Content -->
+    <article>
+      <!-- Bagian Card Coach -->
+      <section class="section-coach">
+        <figure><img src="img/justincoach.jpg" alt="coach-justin" class="img-justin" /></figure>
+        <p class="title">Justin</p>
+        <p class="job">Trainer Sepak Bola</p>
+        <button class="price">Rp 25.000</button>
+        <div class="btn-btn">
+          <button class="btn">30 tahun</button>
+          <button class="btn1"><i data-feather="heart"></i> 99%</button>
+        </div>
+        <p class="p-coach">
+          Justin adalah pelatih sepakbola berpengalaman selama 5 tahun dengan latar belakang sebagai pemain klub daerah. Berdedikasi dalam mengembangkan pemain muda, Justin dikenal karena kemampuannya memadukan pengalaman bermain dan
+          keahlian pelatihan untuk membimbing para pemain menuju kesuksesan.
+        </p>
+      </section>
+      <!-- End Bagian Card Coach -->
+
+      <!-- Payment -->
+      <section class="section-payment">
+        <div>
+          <div class="biaya">
+            <p>Biaya Sesi 30 Menit</p>
+            <p>Rp. 25.000,00</p>
+          </div>
+          <div class="pembayaran">
+            <p>Pembayaran Anda</p>
+            <p>Rp. 25.000,00</p>
+          </div>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <div>
+          <h3>Pilih Metode Pembayaran</h3>
+          <div class="metode-pembayaran">
+            <button class="debit" onclick="debit()">Debit</button>
+            <button class="e-wallet" onclick="bankDigital()">E-Wallet</button>
+          </div>
+          <div div class="bank-account" id="bank">
+            <button class="btn-bank" id="bank1">Bank Central Asia</button>
+            <button class="btn-bank" id="bank2">Live Mandiri</button>
+            <button class="btn-bank" id="bank3">Bank Rakyat Indonesia</button>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="total-pembayaran">
+          <div>
+            <p class="total">Total Pembayaranmu</p>
+            <p class="harga">Rp 25.000,00</p>
+          </div>
+          <button class="bayar-btn" onclick="btnPay()">Bayar & Konfirmasi</button>
+        </div>
+      </section>
+      <!-- End Payment -->
+    </article>
+    <section class="ganti">
+      <a href="index.html">
+        <p class="trainer">Ganti Trainer</p>
+      </a>
+    </section>
+    <!-- End Isi Content -->
+
+    <!-- JavaScript -->
+    <script>
+      function btnPay() {
+        window.location.href = "proof.html";
+      }
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+
+      const bank = document.getElementById("bank");
+      const bank1 = document.getElementById("bank1");
+      const bank2 = document.getElementById("bank2");
+      const bank3 = document.getElementById("bank3");
+
+      function bankDigital() {
+        bank1.innerHTML = "DANA";
+        bank2.innerHTML = "OVO";
+        bank3.style.display = "none";
+      }
+
+      function debit() {
+        window.location.reload();
+      }
+    </script>
+
+    <script>
+      feather.replace({ class: "foo bar", "stroke-width": 2 });
+    </script>
+    <!-- End JavaScript -->
+  </body>
+</html>

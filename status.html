@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment E-Wallet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="status.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="logo">Eureka Sportive</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="https://vmonreve.github.io/HomeAfterLogin/">Home</a></li>
+          <li><a href="https://vmonreve.github.io/AboutUs/" id="about-us">About Us</a></li>
+          <li><a href="https://vmonreve.github.io/KategoriOlahraga/">Article</a></li>
+          <li><a href="index.html">Chat With Trainer</a></li>
+        </ul>
+      </nav>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()"><i data-feather="user"></i>Profile <i data-feather="chevron-down"></i></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Profile</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Title -->
+    <main>
+      <h2>Status Pembayaran</h2>
+    </main>
+    <!-- End Main Title -->
+
+    <!-- Isi Content -->
+    <article>
+      <!-- Bagian Card Coach -->
+      <section class="section-coach">
+        <figure><img src="img/icon berhasil.png" alt="coach-justin" class="img-justin" /></figure>
+        <p class="title">Transaksi Berhasil</p>
+        <p class="joko">Joko Saputro</p>
+        <p class="bca">Bank BCA - 1234567890</p>
+        <div class="container-transfer">
+          <p class="detail">Detail Transfer</p>
+          <div class="detail-transfer">
+            <p>Jenis Transaksi</p>
+            <p>Virtual Account</p>
+          </div>
+          <div class="detail-transfer1">
+            <p>Status</p>
+            <p>Berhasil</p>
+          </div>
+          <div class="detail-transfer2">
+            <p>Tanggal</p>
+            <p>4 Maret 2024</p>
+          </div>
+          <div class="detail-transfer3">
+            <p>No. Transaksi</p>
+            <p>1234567890</p>
+          </div>
+          <div class="detail-transfer4">
+            <p>Jumlah Transfer</p>
+            <p>Rp. 25.000,00-</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Bagian Card Coach -->
+
+      <!-- Payment -->
+      <section class="section-payment">
+        <div class="nama-joko">
+          <p>Nama</p>
+          <p>Joko Saputro</p>
+        </div>
+        <div class="bank-bca">
+          <p>Bank</p>
+          <p>Bank Central Asia</p>
+        </div>
+        <div class="tanggal">
+          <p>Tanggal</p>
+          <p>4 Maret 2024</p>
+        </div>
+        <div class="jumlah">
+          <p>Jumlah</p>
+          <p>Rp. 25.000,00-</p>
+        </div>
+
+        <div class="btn-chat">
+          <button class="bayar-btn" onclick="chatTrainer()">Chat Trainer</button>
+        </div>
+      </section>
+      <!-- End Payment -->
+    </article>
+    <!-- End Isi Content -->
+
+    <!-- JavaScript -->
+    <script>
+      function chatTrainer() {
+        window.location.href = "chat.html";
+      }
+
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+
+      const bank = document.getElementById("bank");
+      const bank1 = document.getElementById("bank1");
+      const bank2 = document.getElementById("bank2");
+      const bank3 = document.getElementById("bank3");
+
+      function bankDigital() {
+        bank1.innerHTML = "DANA";
+        bank2.innerHTML = "OVO";
+        bank3.style.display = "none";
+      }
+
+      function debit() {
+        window.location.reload();
+      }
+    </script>
+
+    <script>
+      feather.replace({ class: "foo bar", "stroke-width": 2 });
+    </script>
+    <!-- End JavaScript -->
+  </body>
+</html>
